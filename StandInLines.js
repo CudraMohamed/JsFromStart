@@ -13,7 +13,7 @@ function returnTrue(){
     return true;
 }
 
-//conditional lgic with if statements
+//conditional logic with if statements
 function trueOrFalse(isItTrue){
     if(isItTrue){
         return "Yes, it is"
@@ -23,7 +23,7 @@ function trueOrFalse(isItTrue){
 console.log(trueOrFalse(true));
 
 //coomparison operators
-//equality operator
+//equality operator  does the type conversion
 function testEqual(val){
     if(val == 12){
         return "Yes, it is";
@@ -31,3 +31,42 @@ function testEqual(val){
     return "false";
 }
 console.log(testEqual(10));
+
+//strict equality operator
+function testEqual(val){
+    if(val === 12){
+        return "Yes, it is";
+    }
+    return "false";
+}
+console.log(testEqual(10));
+
+//comparison with inequality operator
+function testEqual(val){
+    if(val != 12){
+        return "not equal";
+    }
+    return "false";
+}
+console.log(testEqual(10));
+
+//strict inequality operator
+function testEqual(val){
+    if(val !== 12){
+        return "not equal";
+    }
+    return "false";
+}
+console.log(testEqual(10));
+
+//comparison with logical operators
+function testGreater(val){
+    if(val > 100){
+        return "over 100";
+    }
+    if(val > 10){
+        return "over 10";
+    }
+    return "10 or under";
+}
+console.log(testGreater(10));
